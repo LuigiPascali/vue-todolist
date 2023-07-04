@@ -56,11 +56,11 @@
                     type="text"
                     class="form-control"
                     v-model="newTodoText"
-                    placeholder="Aggiungi un nuovo to-do"
+                    placeholder="Aggiungi una nuova cosa da fare"
                     @keyup.enter="addTodo" 
                     />
           
-                  <button class="btn text-white text-uppercase fw-bold mx-1" @click="addTodo" :disabled="newTodoText.trim() === '' "> Aggiungi </button>
+                  <button class="btn border text-white text-uppercase fw-bold mx-1" @click="addTodo" :disabled="newTodoText.trim() === '' "> Aggiungi </button>
 
                 </div>
           

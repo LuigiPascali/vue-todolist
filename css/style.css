@@ -1,9 +1,11 @@
 /* 
     MAIN
 */
-.container {background: linear-gradient(135deg, #ffd600 0%, #ffae00 100%);;padding: 20px;border-radius: 10px;box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);}
+.container {background: linear-gradient(135deg, #ffd600 0%, #ffae00 100%);padding: 20px;border-radius: 10px;box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);}
   
 .list-group-item {background-color: var(--light_color);margin-bottom: 10px;border: 1px solid #CFD1DE ;border-radius: 10px;box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);}
+
+.border {border: 1px solid var(--light_color);}
 
 /* PERSONAL VERSION: */
 
@@ -17,7 +19,7 @@
   
 .empty-list {text-align: center;margin-top: 50px;}
   
-.empty-list img {max-width: 300px;border-radius: 10px;}
+.empty-list img {max-width: 300px;}
 
 .hidden {display: none;}
 
