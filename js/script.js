@@ -2,16 +2,24 @@
 const app = Vue.createApp({
   data() {
     return {
-      todos: [
-        { text: 'Imparare ad usare Vue Js', done: false },
-        { text: 'Imparare ad usare al meglio Bootstrap', done: true },
-        { text: 'Iniziare ad imparare Python', done: true },
-        { text: 'Essere sempre più indipendente nella scrittura dei codici', done:false },
-      ]
+      // Dal momento che ho inserito la possibilità di scrivere le cose da fare, ho svuotato l'array. 
+      todos: [],
+      newTodoText: ''
     }
   },
-  // MILESTONE 2:
+  
   methods: {
+    // MILESTONE 3:
+    addTodo() {
+      if (this.newTodoText.trim() !== '') {
+        this.todos.push({ text: this.newTodoText, done: false });
+        this.newTodoText = '';
+        console.log("Nuovo To-Do aggiunto");
+        console.log("Lista aggiornata:", this.todos);
+      }
+    },
+
+    // MILESTONE 2:
     removeTodo(todo) {
       const index = this.todos.indexOf(todo);
       if (index !== -1) {
@@ -25,6 +33,7 @@ const app = Vue.createApp({
     console.log("Lista iniziale:", this.todos);
   }
 });
+
 
 // Monto l'applicazione Vue
 app.mount('#app');
