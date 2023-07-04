@@ -5,3 +5,19 @@
   
 .list-group-item {background-color: var(--light_color);margin-bottom: 10px;border: 1px solid #CFD1DE ;border-radius: 10px;box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);}
 
+/* PERSONAL VERSION: */
+
+/* CLASSI DI COLORI PER I TESTI: */
+
+.important {color: blue;}
+
+.priority {color: red;}
+
+.secondary {color: green;}
+  
+.empty-list {text-align: center;margin-top: 50px;}
+  
+.empty-list img {max-width: 300px;border-radius: 10px;}
+
+.hidden {display: none;}
+
