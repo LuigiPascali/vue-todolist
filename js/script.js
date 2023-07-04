@@ -1,11 +1,19 @@
-// Inizializzazione Vue Js:
+// Inizializzazione Vue
 const app = Vue.createApp({
-    data() {
-      return {
-        
-      };
+  data() {
+    return {
+      todos: [
+        { text: 'Imparare ad usare Vue Js', done: false },
+        { text: 'Imparare ad usare al meglio Bootstrap', done: true },
+        { text: 'Iniziare ad imparare Python', done: true },
+        { text: 'Essere sempre più indipendente nella scrittura dei codici', done:false },
+      ]
     }
-  });
+  },
+  mounted() {
+    console.log(this.todos);
+  }
+});
 
-  // Mostra l'applicazione nella pagina HTML
-  app.mount('#app');
+// Monto l'applicazione Vue
+app.mount('#app');
