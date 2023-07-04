@@ -10,8 +10,19 @@ const app = Vue.createApp({
       ]
     }
   },
+  // MILESTONE 2:
+  methods: {
+    removeTodo(todo) {
+      const index = this.todos.indexOf(todo);
+      if (index !== -1) {
+        this.todos.splice(index, 1);
+      }
+      console.log("To-Do rimosso:", todo);
+      console.log("Lista aggiornata:", this.todos);
+    }
+  },
   mounted() {
-    console.log(this.todos);
+    console.log("Lista iniziale:", this.todos);
   }
 });
 
